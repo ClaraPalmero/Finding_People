@@ -1,0 +1,182 @@
+$main-color: #fff;
+$container-color: rgb(53, 51, 59);
+main {   
+    background-color: $main-color;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    height: auto;
+    
+        #container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: center;   
+        width: 100vw;
+        height: 450px;
+        background-color: $container-color;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        margin-top: 50px;
+        padding: 30px;
+            #search {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: -50px;    
+            
+                #textHome{
+                    align-items: center; 
+                    justify-content: center;
+                                        
+                    h1 { 
+                        font-size: 40px;
+                        margin-bottom: 20px;
+                        color: rgb(255, 255, 255);
+                        font-family: "Anton", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        width: 380px;
+                        margin-right: 20px;
+                    }
+
+                    #subtitle {
+                        color: white;
+                        width: 360px;
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        text-align: left;
+                        margin-bottom: 20px;
+                    }
+                }
+            }  
+        } 
+}
+
+
+#selectAndButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#selects {
+    flex-direction: row;   
+   }
+
+select {
+    width: 140px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 13px;
+    color: lightslategray;
+    border: 1px solid #ccc;
+    
+    box-shadow: -1px 1px 9px 0px rgba(3,2,2,0.75);
+    -webkit-box-shadow: -1px 1px 9px 0px rgba(3,2,2,0.75);
+    -moz-box-shadow: -1px 1px 9px 0px rgba(3,2,2,0.75);
+}
+
+#findButton {
+   
+    width: 300px;
+    height: 60px;
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: rgb(79, 247, 205);
+    cursor: pointer;
+    transform: scale(0.9);
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;    
+}
+
+#homeImg {
+    width: 380px;    
+}
+
+#ficha { 
+    display: none; /* Cuando vaya a mostrar la ficha se pondra en flex */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    background-color: rgb(255, 255, 255);   
+    border-radius: 8px;
+    width: 600px;    
+    margin-top: 100px;   
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;   
+}
+
+#photoUser {
+    border-radius: 50%;;
+    margin-top: 20px;
+}
+
+#nameH2 {
+    margin-top: -5px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0;
+    text-align: center;   
+}
+
+li {
+    list-style-type: none; 
+    padding: 8px;     
+    text-align: center;
+    position: relative;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    left: -30px; 
+    width: 20px; 
+    height: 20px;   
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* 
+#ageLi::before {
+      background-image: url('./img/calendar_2886665.png'); 
+}
+
+#cityLi::before {
+      background-image: url('./img/house_795561.png'); 
+}
+
+#countryLi::before {
+      background-image: url('./img/earth-globe_231045.png'); 
+}
+
+#emailLi::before {
+      background-image: url('./img/mail_9344663.png'); 
+}
+
+#phoneLi::before {
+      background-image: url('./img/viber_220795.png'); 
+} */
+
