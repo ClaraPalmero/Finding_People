@@ -16,7 +16,7 @@ main #container {
   justify-content: center;
   width: 100vw;
   height: 450px;
-  background-color: rgb(53, 51, 59);
+  background-color: rgb(199, 205, 205);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   margin-top: 50px;
   padding: 30px;
@@ -25,17 +25,17 @@ main #container #search {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: -50px;
+  margin-bottom: 10px;
 }
 main #container #search #textHome {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 main #container #search #textHome h1 {
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: #fff;
   font-family: "Anton", sans-serif;
   font-weight: 400;
@@ -50,7 +50,7 @@ main #container #search #textHome #subtitle {
   font-weight: 400;
   font-style: normal;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 main #container #search #selectAndButton {
   display: flex;
@@ -74,11 +74,15 @@ main #container #search #selectAndButton #findButton {
   color: white;
   font-weight: bold;
 }
+main #container #search #selectAndButton #findButton:hover {
+  background-color: rgb(221, 221, 56);
+}
 main #container #homeImg {
   width: 380px;
+  margin-bottom: 50px;
 }
 main #ficha {
-  display: none; /* Cuando vaya a mostrar la ficha se pondra en flex */
+  display: none;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -136,7 +140,4 @@ select {
   font-size: 13px;
   color: lightslategray;
   border: 1px solid #ccc;
-  box-shadow: -1px 1px 9px 0px rgba(3, 2, 2, 0.75);
-  -webkit-box-shadow: -1px 1px 9px 0px rgba(3, 2, 2, 0.75);
-  -moz-box-shadow: -1px 1px 9px 0px rgba(3, 2, 2, 0.75);
 }/*# sourceMappingURL=styles.css.map */
